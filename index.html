@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-white mb-3 fixed sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-darkbrown fs-3" href="#">Restaurant</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link active text-lightbrown" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#third">Menu</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="#fourth">Reservation</a>
+                  </li>
+
+                  <li class="nav-item">
+                        <a class="nav-link" href="#fifth">Contact</a>
+                      </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex align-items-center w-25 justify-content-end">
+        
+          <p class="d-inline d-none d-lg-block">Toggle Mode</p>
+         <label class="switch d-none d-lg-block">
+                          <input type="checkbox"  onclick="darkMode()">
+                          <span class="slider round"></span>
+          </label>
+        </div>
+      </nav>
+
+      <div>
+    <div id="hero-banner">
+                
+                        
+                    
+            <div class="row p-0 m-0">
+                <div class="col-md-6 hero-left d-flex align-items-center">
+                    <div>
+                    <h2 class="text-darkbrown fw-bold">Your Favorite Restaurant</h2>
+                    <p class="text-lightbrown">Nulla maximus risus vitae porttitor gravida.Mauris ipsum libero, varius a turpis ac, finibus ornare dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ratione amet magnam quaerat hic maxime!</p>
+                    <button class="btn btn-darkbrown"> Make Reservation</button>
+                    </div>
+                </div>
+                <div class="col-md-6 hero-right text-center position-relative">
+                    <img src="img/chef.png" class="img-fluid" alt="iamge">
+                    <div class="circle position-absolute bg-darkbrown"></div>
+                </div>
+            </div>
+        </div>
+    
+
+    <section id="second">
+      <div class="container-fluid ">
+        <div class="row bg-darkbrown d-flex align-items-center">
+          <div class="image-holder col-md-6 p-0">
+            <img src="img/dish.jpeg" class="img-fluid " alt="dish">
+          </div>
+          <div class="col-md-6 px-5 py-5 text-white">
+            <h3 class="text-uppercase mb-3">aecenas condimentum quam blandit magna efficitur, non egestas ipsum tristique.</h3>
+            <p>Maecenas condimentum quam blandit magna efficitur, non egestas ipsum tristique. Nulla tincidunt sed risus a pharetra. Aliquam sit amet placerat mi, vel aliquam sem. Integer tristique posuere turpis in rutrum. Nullam porttitor turpis libero, eu posuere elit malesuada et. Donec sit amet fringilla dui. Aliquam vitae eleifend sem. Aliquam vehicula dignissim ligula et mattis. Sed laoreet bibendum condimentum. In iaculis feugiat lorem. Nunc et odio tellus.<br /><br />
+
+                Aliquam faucibus elit euismod, feugiat tortor eget, cursus est. Maecenas tristique sagittis erat, sit amet luctus odio suscipit at. Fusce vestibulum, libero a gravida vulputate, lectus augue semper magna, sed suscipit lectus dolor ut ex. Nam viverra est in turpis blandit, sit amet porttitor nulla tristique. Sed malesuada feugiat felis sed egestas. Donec tempor purus ac erat dignissim dignissim.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="third" class="py-5">
+
+ <div class="container-fluid px-5">
+  
+    <div class="heading text-center">
+      <h2 class="text-darkbrown">Our Menu</h2>
+      <p class="w-75 mx-auto text-lightbrown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum molestias repudiandae doloribus obcaecati nam eius delectus animi rem corrupti iure!</p>
+    </div>
+
+    <div class="text-center pt-3">
+        <button class="btn btn-darkbrown filter-button" data-filter="all">All</button>
+        <button class="btn btn-darkbrown  filter-button" data-filter="starter">Starter</button>
+        <button class="btn btn-darkbrown  filter-button" data-filter="maincourse">Main Course</button>
+        <button class="btn btn-darkbrown  filter-button" data-filter="dessert">Dessert</button>
+        
+    </div>
+
+<div class="row pt-3">
+
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter starter">
+          <div class="img-wrapper">  
+          <img src="img/food5.jpeg">
+
+          <div class="menu-text text-center">
+              <div>
+              <h5 class="p-0">Delicious Food</h5>
+              <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="p-0 m-0">$50</p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter maincourse">
+            <div class="img-wrapper">  
+                <img src="img/food2.jpeg">
+
+                <div class="menu-text text-center">
+                    <div>
+                    <h5 class="p-0">Delicious Food</h5>
+                    <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="p-0 m-0">$50</p>
+                  </div>
+                </div>
+                </div>
+        </div>
+
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter dessert">
+            <div class="img-wrapper">  
+                <img src="img/food3.jpeg">
+
+                <div class="menu-text text-center">
+                  <div>
+                  <h5 class="p-0">Delicious Food</h5>
+                  <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="p-0 m-0">$50</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter starter">
+            <div class="img-wrapper">  
+                <img src="img/food4.jpeg">
+
+                <div class="menu-text text-center">
+                    <div>
+                    <h5 class="p-0">Delicious Food</h5>
+                    <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="p-0 m-0">$50</p>
+                  </div>
+                </div>
+                </div>
+        </div>
+
+        <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter starter">
+            <div class="img-wrapper">  
+            <img src="img/food6.jpeg">
+  
+            <div class="menu-text text-center">
+                <div>
+                <h5 class="p-0">Delicious Food</h5>
+                <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="p-0 m-0">$50</p>
+              </div>
+            </div>
+            </div>
+          </div>
+  
+          <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter dessert">
+              <div class="img-wrapper">  
+                  <img src="img/food7.jpeg">
+  
+                  <div class="menu-text text-center">
+                      <div>
+                      <h5 class="p-0">Delicious Food</h5>
+                      <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                      <p class="p-0 m-0">$50</p>
+                    </div>
+                  </div>
+                  </div>
+          </div>
+  
+          <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter maincourse">
+              <div class="img-wrapper">  
+                  <img src="img/ffood8.jpeg">
+  
+                  <div class="menu-text text-center">
+                    <div>
+                    <h5 class="p-0">Delicious Food</h5>
+                    <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="p-0 m-0">$50</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+          <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter dessert">
+              <div class="img-wrapper">  
+                  <img src="img/food9.jpeg">
+  
+                  <div class="menu-text text-center">
+                      <div>
+                      <h5 class="p-0">Delicious Food</h5>
+                      <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                      <p class="p-0 m-0">$50</p>
+                    </div>
+                  </div>
+                  </div>
+          </div>
+
+          <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter maincourse">
+              <div class="img-wrapper">  
+              <img src="img/food10.jpeg">
+    
+              <div class="menu-text text-center">
+                  <div>
+                  <h5 class="p-0">Delicious Food</h5>
+                  <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="p-0 m-0">$50</p>
+                </div>
+              </div>
+              </div>
+            </div>
+    
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter maincourse">
+                <div class="img-wrapper">  
+                    <img src="img/food11.jpeg">
+    
+                    <div class="menu-text text-center">
+                        <div>
+                        <h5 class="p-0">Delicious Food</h5>
+                        <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="p-0 m-0">$50</p>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+    
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter starter">
+                <div class="img-wrapper">  
+                    <img src="img/food12.jpeg">
+    
+                    <div class="menu-text text-center">
+                      <div>
+                      <h5 class="p-0">Delicious Food</h5>
+                      <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                      <p class="p-0 m-0">$50</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-6 filter dessert">
+                <div class="img-wrapper">  
+                    <img src="img/food1.jpeg">
+    
+                    <div class="menu-text text-center">
+                        <div>
+                        <h5 class="p-0">Delicious Food</h5>
+                        <p class="p-0 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p class="p-0 m-0">$50</p>
+                      </div>
+                    </div>
+                    </div>
+            </div>
+
+    </div>
+</div>
+</section>
+
+<section id="fourth" class="bg-darkbrown">
+    <div class="container-fluid ">
+      
+      <div class="row">
+      
+      <div class="col-md-6 px-5 d-flex align-items-center justify-content-center py-5">
+       <div>
+        <h2 class="text-white">Book a Table</h2>
+        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sunt.</p>
+       <form action="#">
+         
+          <label for="name" class="text-white">Name</label>
+         <input type="text" id="name" name="name" class="form-control">
+
+         <label for="phNumber" class="text-white mt-3">Phone Number</label>
+         <input type="text" id="phNumber" name="phNumber" class="form-control">
+
+         <label for="phNumber" class="text-white mt-3">Number of Guests</label>
+         <input type="number" id="phNumber" name="phNumber" class="form-control">
+
+         <button type="submit" class="btn btn-outline-light mt-4">Make a Booking</button>
+       </form>
+      </div>
+    </div>
+
+    <div class="col-md-6 image-holder">
+        <img src="img/pexels-photo-4992830.jpeg" class="img-fluid" alt="">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="fifth" class="py-5">
+    <div class="container">
+      <div class="heading text-center">
+        <h2 class="text-darkbrown">Reach Out to Us</h2>
+        <p class="w-75 mx-auto text-lightbrown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laboriosam repellat fuga praesentium vero eos.</p>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <i class="fa fa-3x fa-phone text-darkbrown d-block text-center"></i>
+          <a href="tel:+9779851244061" class="text-center d-block mt-3 text-lightbrown text-decoration-none">+977-9851244061</a>
+        </div>
+        <div class="col-md-4">
+            <i class="fa fa-3x fa-envelope text-darkbrown d-block text-center"></i>
+            <a href="mailto: eat@restaurant.com" class="text-center d-block mt-3 text-lightbrown text-decoration-none">eat@restaurant.com</a>
+          </div>
+          <div class="col-md-4">
+              <i class="fa fa-3x fa-location-dot text-darkbrown d-block text-center"></i>
+              <a href="#" class="text-center d-block mt-3 text-lightbrown text-decoration-none">Street Name, City</a>
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="bg-darkbrown">
+    <div class="container-fluid p-3">
+      <p class="text-white text-center p-0 m-0">&copy; 2021 Your Restaurant</p>
+    </div>
+  </section>
+
+</div>
+
+   
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
