@@ -259,6 +259,58 @@ body .nav-background {
   background: #000 !important;
 }
 
+body .no-js #loader {
+  display: none;
+}
+
+body .js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+body .se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
+
+body .circle-loader {
+  height: 150px;
+  width: 150px;
+  border: 15px solid;
+  border-color: #230903 #7B6B43 #230903 #7B6B43;
+  border-radius: 50%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: relative;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(1720deg);
+            transform: translate(-50%, -50%) rotate(1720deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(1720deg);
+            transform: translate(-50%, -50%) rotate(1720deg);
+  }
+}
+
 @media (max-width: 500px) {
   .circle {
     height: 300px !important;

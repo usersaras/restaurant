@@ -12,10 +12,6 @@ function darkMode(){
 
     var paratag = element.getElementsByTagName("h2");
 
-    
-    // console.log((paratag)[0]);
-    // console.log((paratag)[3].innerText);
-    // console.log(navelement);
     paratag[0].classList.toggle("white-text");
     paratag[1].classList.toggle("white-text");
     paratag[3].classList.toggle("white-text");
@@ -62,3 +58,40 @@ $(this).removeClass("active");
 $(this).addClass("active");
 
 });
+
+//loader
+  // Wait for window load
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+});
+
+//increase and reduce
+
+var inE = document.getElementById("increment").addEventListener("click", increment);
+
+var reE = document.getElementById("reduction").addEventListener("click", reduction);
+
+var counter = 0;
+
+function increment(){
+    console.log("click")
+    counter++;
+    if(counter>=0){
+        document.getElementById("nGuest").innerText = counter;
+    }else if(counter>20){
+        alert("Maximum number of guests reached!")
+    }
+    document.getElementById("noGuest").value=counter;
+}
+
+function reduction(){
+    counter--;
+    if(counter>=0){
+        document.getElementById("nGuest").innerText = counter;
+    }else{
+        alert("Number of guest cannot be negative!");
+        counter=0;
+    }
+    document.getElementById("noGuest").value=counter;
+}
