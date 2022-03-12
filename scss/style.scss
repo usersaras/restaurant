@@ -49,16 +49,7 @@ $lightbrown: #7B6B43;
 
 body{
 
-  nav{
-
-    p{
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-right: 55px;
-
-    }
-//switch
+  //switch
 .switch {
   position: relative;
   display: inline-block;
@@ -113,6 +104,17 @@ input:checked + .slider:before {
   transform: translate(22px, 50%);
 }
 //switch
+
+  nav{
+
+    p{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-right: 55px;
+
+    }
+
   }
 
     &.darkmode{
